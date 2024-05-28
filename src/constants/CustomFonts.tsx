@@ -1,4 +1,4 @@
-const Fonts = {
+const CustomFonts = {
     Black: "Roboto-Black",
     Bold: "Roboto-Bold",
     Light: "Roboto-Light",
@@ -10,5 +10,5 @@ const Fonts = {
     Lato: "Lato-Regular",
   };
   
-export default Fonts;
+export default CustomFonts;
   

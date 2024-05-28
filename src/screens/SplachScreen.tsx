@@ -1,10 +1,17 @@
 import { View, Text, StatusBar, Image, StyleSheet } from 'react-native'
-import React from 'react'
-import { Colors,Images,Fonts } from '../constants/Index'
+import React, { useEffect } from 'react'
+import { Colors,Images,CustomFonts } from '../constants/Index'
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import { Display } from "../utils/Index"
 
-const SplachScreen = () => {
+const SplachScreen = ({navigation}) => {
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      navigation.navigate("Welcome")
+    },1500)
+  })
+
   return (
     <View style={styles.container}>
     <StatusBar
@@ -32,7 +39,7 @@ const styles = StyleSheet.create({
   fashion:{
     fontSize: RFPercentage(5), 
     color: Colors.DEFAULT_WHITE,
-    fontFamily :Fonts.Black
+    fontFamily :CustomFonts.Black
   }
 })
 

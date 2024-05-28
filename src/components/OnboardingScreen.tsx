@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, ImageSourcePropType } from 'react-native'; 
 import {Display} from '../utils/Index';
 import { RFPercentage } from "react-native-responsive-fontsize";
-import {Fonts , Images} from '../constants/Index';
+import {CustomFonts , Images} from '../constants/Index';
 
 interface OnboardingScreenProps {
   image: string | ImageSourcePropType;
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: RFPercentage(4),
-    fontFamily :Fonts.Black,
+    fontFamily :CustomFonts.Black,
     marginBottom: 10,
   },
   content: {

@@ -41,12 +41,6 @@ const WelcomeScreen = ({navigation}) => {
   };
 
 
-
-
-  function navigate(arg0: string): void {
-    throw  nav;
-  }
-
   return (
     <View style={styles.container}>
       <StatusBar
